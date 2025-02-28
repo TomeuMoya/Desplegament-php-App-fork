@@ -3,9 +3,19 @@
 require_once('Connexio.php');
 require_once('Header.php');
 
+/**
+ * Class Modificar
+ * 
+ * Clase para manejar la lógica de modificación de productos.
+ */
 class Modificar {
 
-    // Método para mostrar el formulario de modificación del producto
+    /**
+     * Método para mostrar el formulario de modificación del producto.
+     * 
+     * @param int $id ID del producto a modificar.
+     * @return void
+     */
     public function mostrarFormulari($id) {
         // Verifica si el ID del producto es válido
         if (!isset($id) || !is_numeric($id)) {
